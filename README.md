@@ -87,4 +87,4 @@ As I dove further into its implementation, I realized I needed to refactor the w
 
 At the end of it all - it all worked out. I got rid of Nginx, built a new Docker image, kept Gunicorn intact, used WhiteNoise to serve static files and made the codebase a little bit cleaner along the way.
 
-All's well that end's well.
+All's well that ends well.
