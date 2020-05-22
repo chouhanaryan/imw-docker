@@ -6,9 +6,10 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV SECRET_KEY i)1pu*ftk99hkx(9u78lmi@3b7pg-yt)!%dvki=z1sz&%s!hk9
 ENV DJANGO_ALLOWED_HOSTS inventory-management-web.ap-south-1.elasticbeanstalk.com localhost 127.0.0.1 [::1]
 
-RUN mkdir -p /home/app
-
 ENV APP_HOME=/home/app
+
+RUN mkdir -p ${APP_HOME}
+
 WORKDIR $APP_HOME
 
 RUN python -m pip install --upgrade pip
