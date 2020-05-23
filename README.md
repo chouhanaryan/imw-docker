@@ -22,7 +22,7 @@ Only a single file is required to deploy the image.
 {
 	"AWSEBDockerrunVersion": "1",
 	"Image": {
-		"Name": "chouhanaryan/imw",
+		"Name": "chouhanaryan/imw:stable",
 		"Update": "true"
 	},
 	"Ports": [
@@ -85,6 +85,12 @@ I ended up choosing WhiteNoise since it fit our needs best.
 
 As I dove further into its implementation, I realized I needed to refactor the way our static files were organized as well.
 
-At the end of it all - it all worked out. I got rid of Nginx, built a new Docker image, kept Gunicorn intact, used WhiteNoise to serve static files and made the codebase a little bit cleaner along the way.
+At the end of the process - it all worked out. 
 
-All's well that ends well.
+I got rid of Nginx, kept Gunicorn intact, used WhiteNoise to serve static files, built a new Docker image and made the codebase a little bit cleaner along the way.
+
+# Future Steps
+
+The current setup doesn't take incorporate a production-grade database such as PostgreSQL or MySQL. Making a separate container for the database isn't usually a good option. Ideally, we can spin up an RDS instance alongside the container and directly connect the two on AWS.
+
+That is my next goal.
