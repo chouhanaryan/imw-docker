@@ -38,7 +38,7 @@ The file is uploaded as a source code file while creating a new Environment.
 
 Note:
 1. The name of the image is with respect to its name on Docker Hub. Other ways of using images from different Container Registeries are well-documented [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/single-container-docker-configuration.html).
-2. The port points to the port that was exposed by the image [here](https://github.com/chouhanaryan/imw-docker/blob/master/Dockerfile#L22).
+2. The port points to the port that was exposed by the image [here](https://github.com/chouhanaryan/imw-docker/blob/master/Dockerfile#L23).
 
 # Extra Notes
 
