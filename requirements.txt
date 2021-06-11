@@ -6,7 +6,7 @@ Click==7.0
 Django==2.2.24
 django-cors-headers==3.2.1
 django-templated-mail==1.1.1
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 djoser==2.0.3
 entrypoints==0.3
 flake8==3.7.9
