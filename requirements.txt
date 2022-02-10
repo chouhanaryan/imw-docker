@@ -3,7 +3,7 @@ attrs==19.3.0
 autopep8==1.5
 black==19.10b0
 Click==7.0
-Django==2.2.24
+Django==2.2.27
 django-cors-headers==3.2.1
 django-templated-mail==1.1.1
 djangorestframework==3.11.2
